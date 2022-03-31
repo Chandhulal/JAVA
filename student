@@ -1,0 +1,32 @@
+package student;
+
+public class Student 
+{
+   int m1,m2,m3;
+   Student()
+   {
+       m1=20;
+       m2=30;
+       m3=40;
+   }
+   public void sum()
+   {
+       int s;
+       s=m1+m2+m3;
+       System.out.println("sum is "+s);
+   }
+   public void percentage()
+   {
+       int p,s;
+       s=m1+m2+m3;
+       p=(s/200)*100;
+       System.out.println("percentage is "+p);
+   }
+   public static void main(String[] arg)
+   {
+       Student info=new Student();
+       info.sum();
+       info.percentage();
+   }
+}
+
