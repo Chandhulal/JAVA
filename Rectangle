@@ -1,0 +1,31 @@
+
+package rectangle;
+
+public class Rectangle
+{
+    int l,b;
+    Rectangle()
+    {
+        l=5;
+        b=3;
+    }
+    public void perimeter()
+    {
+        int p;
+        p=2*(l+b);
+        System.out.println("perimeter "+p);
+    }
+    public void area()
+    {
+        int a;
+        a=l*b;
+        System.out.println("area "+a);
+    }
+    public static void main(String[] args)
+    {
+        Rectangle info=new Rectangle();
+        info.perimeter();
+        info.area();
+    }
+         
+}
