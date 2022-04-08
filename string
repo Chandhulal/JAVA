@@ -1,0 +1,48 @@
+package sorting;
+
+import java.util.Scanner;
+
+
+public class Sorting 
+{
+    public static void main(String[] args) 
+    {
+        int n,i,j;
+        Scanner s=new Scanner(System.in);
+        System.out.println("enter the limit :");
+        n=s.nextInt();
+        String[]ar=new String[n];
+        System.out.println("enter the string :");
+        
+        for(i=0;i<n;i++)
+        {
+            ar[i]=s.next();
+            
+        }
+        System.out.println("\n before sorting the strings are :");
+        
+        for(i=0;i<n;i++)
+        {
+            System.out.println(ar[i]);
+            
+        }
+        String temp;
+        for(i=0;i<n;i++)
+        {
+            for(j=i+1;j<n;j++)
+            {
+                if(ar[i].compareTo(ar[j])>0)
+                {
+                    temp=ar[i];
+                    ar[i]=ar[j];
+                    ar[j]=temp;
+                }
+            }
+        }
+        System.out.println("\n after sorting the strings are :");
+        for(i=0;i<n;i++)
+        {
+            System.out.println(ar[i]);
+        }
+    }
+}
